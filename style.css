@@ -529,12 +529,12 @@ footer {
   }
 
   .main-container .image {
-    margin: 0 auto 20px auto; /* Tengah & beri jarak bawah */
+    margin: -50px auto 30px auto; /* Tengah & beri jarak bawah */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 180px; /* Atur tinggi agar proporsional */
-    width: 180px; /* Atur lebar agar proporsional */
+    height: 250px; /* Atur tinggi agar proporsional */
+    width: 250px; /* Atur lebar agar proporsional */
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 0 30px 5px rgb(0, 167, 204);

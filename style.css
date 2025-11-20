@@ -120,7 +120,7 @@ nav {
 }
 
 .hamburger.active span:nth-child(1) {
-  transform: rotate(45deg) translate(8px, 8px);
+  opacity: 0;
 }
 
 .hamburger.active span:nth-child(2) {
@@ -128,7 +128,7 @@ nav {
 }
 
 .hamburger.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -7px);
+  opacity: 0;
 }
 
 /* Mobile Menu */

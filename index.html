@@ -12,17 +12,37 @@
     <title>Portfolio | Muhammad Ilhamd Adzany</title>
   </head>
   <body>
+    <!-- Navigation -->
     <nav>
       <div class="nav-container">
         <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
           Muhammad <span>Ilhamd Adzany</span>
         </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <div class="close-menu" onclick="toggleMenu()">
+          <i class="fas fa-times"></i>
+        </div>
+        <ul>
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        </ul>
       </div>
     </nav>
 
-    <!-- main Section Start -->
-
-    <section>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
       <div class="main-container">
         <div class="content">
           <h1
@@ -45,8 +65,9 @@
             data-aos-duration="1500"
             data-aos-delay="1100"
           >
-            build exceptional digital experiences with modern web technologies.
-            Focused on creating clean, efficient and scalable solutions.
+            I build exceptional digital experiences with modern web
+            technologies. Focused on creating clean, efficient and scalable
+            solutions.
           </p>
           <div class="social-links">
             <a
@@ -55,32 +76,40 @@
               data-aos="fade-up"
               data-aos-duration="1500"
               data-aos-delay="1300"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
             <a
               href="https://github.com/Adzanyjoel"
               target="_blank"
               data-aos="fade-up"
               data-aos-duration="1500"
               data-aos-delay="1400"
-              ><i class="fa-brands fa-github"></i
-            ></a>
+              aria-label="GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
             <a
-              href="https://wa.me/6282256207235?text=Hallo%20salam%20kenal%20^_^"
+              href="https://wa.me/6282256207235?text=Hallo%20^_^"
               target="_blank"
               data-aos="fade-up"
               data-aos-duration="1500"
               data-aos-delay="1500"
-              ><i class="fa-brands fa-whatsapp"></i
-            ></a>
+              aria-label="WhatsApp"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
             <a
               href="https://www.instagram.com/adzanyjoel"
               target="_blank"
               data-aos="fade-up"
               data-aos-duration="1500"
               data-aos-delay="1600"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
           </div>
           <div
             class="btn"
@@ -94,48 +123,65 @@
           </div>
         </div>
         <div class="image" data-aos="zoom-in" data-aos-duration="3000">
-          <img src="img/2.jpeg.jpg" alt="foto" width="100%" height="100%" />
+          <img src="img/2.jpeg.jpg" alt="Muhammad Ilhamd Adzany Portrait" />
         </div>
       </div>
     </section>
-    <!-- main Section end-->
 
-    <!-- Skills Section Start -->
-
+    <!-- Skills Section -->
     <section class="section skills" id="skills">
       <div class="container">
-        <h1 class="section-title">My Skills</h1>
+        <h2 class="section-title">My Skills</h2>
         <div class="skills-container">
-          <div class="skill-card html">
+          <div
+            class="skill-card html"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <i class="fab fa-html5"></i>
-            <h2>HTML5</h2>
+            <h3>HTML5</h3>
             <p>Semantic markup, accessibility standards, SEO optimization.</p>
             <div class="skill-bar">
               <div class="skill-level"></div>
             </div>
           </div>
 
-          <div class="skill-card css">
+          <div
+            class="skill-card css"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
             <i class="fab fa-css3-alt"></i>
-            <h2>CSS3</h2>
+            <h3>CSS3</h3>
             <p>Responsive design, animations, Flexbox, Grid, preprocessors.</p>
             <div class="skill-bar">
               <div class="skill-level"></div>
             </div>
           </div>
 
-          <div class="skill-card javascript">
+          <div
+            class="skill-card javascript"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
             <i class="fab fa-js"></i>
-            <h2>JavaScript</h2>
+            <h3>JavaScript</h3>
             <p>ES6+, DOM manipulation, async programming, APIs.</p>
             <div class="skill-bar">
               <div class="skill-level"></div>
             </div>
           </div>
 
-          <div class="skill-card uiux">
+          <div
+            class="skill-card uiux"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
             <i class="fas fa-pencil-ruler"></i>
-            <h2>UI/UX Design</h2>
+            <h3>UI/UX Design</h3>
             <p>User-centered design, prototyping, wireframing, Figma.</p>
             <div class="skill-bar">
               <div class="skill-level"></div>
@@ -144,20 +190,18 @@
         </div>
       </div>
     </section>
-    <!-- Skills Section End -->
 
-    <!-- Projects Section Start-->
-
+    <!-- Projects Section -->
     <section class="section projects" id="projects">
       <div class="container">
         <h2 class="section-title">My Projects</h2>
         <div class="projects-container">
-          <div class="project-card">
+          <div class="project-card" data-aos="fade-up" data-aos-duration="1000">
             <div class="project-image">
-              <img src="img/LogoTriipnesia.png" alt="website Triipnesia" />
+              <img src="img/LogoTriipnesia.png" alt="Triipnesia Website" />
             </div>
             <div class="project-info">
-              <h3>Triipnesia website</h3>
+              <h3>Triipnesia Website</h3>
               <p>
                 A website that provides trusted tour & travel services that
                 focus on exploring the natural and cultural beauty of Lampung.
@@ -176,14 +220,23 @@
               >
             </div>
           </div>
-          <div class="project-card">
+
+          <div
+            class="project-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
             <div class="project-image">
-              <img src="img/logo CiizArt.png" alt="website Triipnesia" />
+              <img src="img/logo CiizArt.png" alt="CiizArt Website" />
             </div>
             <div class="project-info">
-              <h3>CiizArt website</h3>
+              <h3>CiizArt Website</h3>
               <p>
-                CiizArt is a creative brand specializing in unique and artistic photo card designs. Combining modern aesthetics with a personal touch, each piece is crafted to capture special moments in a visually striking way. Perfect for collections, gifts, or exclusive merchandise, CiizArt turns memories into pocket-sized art.
+                CiizArt is a creative brand specializing in unique and artistic
+                photo card designs. Combining modern aesthetics with a personal
+                touch, each piece is crafted to capture special moments in a
+                visually striking way.
               </p>
               <div class="project-tags">
                 <span>HTML</span>
@@ -199,14 +252,22 @@
               >
             </div>
           </div>
-          <div class="project-card">
+
+          <div
+            class="project-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
             <div class="project-image">
-              <img src="img/logo anniversary.png" alt="website anniversary" />
+              <img src="img/logo anniversary.png" alt="Anniversary Website" />
             </div>
             <div class="project-info">
-              <h3>Anniversary website</h3>
+              <h3>Anniversary Website</h3>
               <p>
-                A retro game console-style website created to celebrate an anniversary. It displays a "Happy Anniversary" message and features buttons for Messages, Gallery, Music, and Tetris, as well as fun interactive controls.
+                A retro game console-style website created to celebrate an
+                anniversary. It displays a "Happy Anniversary" message and
+                features buttons for Messages, Gallery, Music, and Tetris.
               </p>
               <div class="project-tags">
                 <span>HTML</span>
@@ -221,15 +282,54 @@
               >
             </div>
           </div>
+
+          <div
+            class="project-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <div class="project-image">
+              <img src="img/Foto Website Selaras.png" alt="Selaras Website" />
+            </div>
+            <div class="project-info">
+              <h3>Selaras Muba Lestari Website</h3>
+              <p>
+                Selaras Muba Lestari is a community-based organization from Musi
+                Banyuasin, South Sumatra. Their focus is on sustainable economic
+                development, youth empowerment, and environmental initiatives.
+                The website highlights their mission to build an inclusive and
+                eco-friendly economic ecosystem, support local MSMEs, run
+                community training programs, and encourage young people to
+                become agents of change. They also run innovation programs,
+                business incubation, and local environmental activities.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <a
+                href="https://selarasmuba.com/"
+                target="_blank"
+                class="btn-project"
+                >View Project</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <!-- Projects Section End-->
 
     <!-- Footer -->
     <footer>
       <div class="container">
-        <p>© 2024 Muhammad Ilhamd Adzany. All rights reserved.</p>
+        <div class="footer-content">
+          <p>&copy; 2024 Muhammad Ilhamd Adzany. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#home">Back to Top</a>
+          </div>
+        </div>
       </div>
     </footer>
 
